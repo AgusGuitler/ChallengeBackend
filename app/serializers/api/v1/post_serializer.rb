@@ -1,11 +1,12 @@
+# frozen_string_literal: true
+
 module Api
-    module V1
-        class PostSerializer < ApplicationSerializer
-            attributes :id,
-                       :title,
-                       :image,
-                       :category,
-                       :date_of_creation             
-        end
+  module V1
+    class PostSerializer < ApplicationSerializer
+      attributes :id,
+                 :title,
+                 :image,
+                 :category
     end
+  end
 end
