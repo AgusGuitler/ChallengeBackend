@@ -14,7 +14,7 @@ module Api
             def update
                 post.category = associated_category
                 
-                if Post.update(update_post_params)
+                if post.update(update_post_params)
                     render json: post, serializer: ShowPostSerializer::PostSerializer, status: :ok                    
                 else
                     render json: { error: "We can't update the data" }, status: :unprocessable_entity
