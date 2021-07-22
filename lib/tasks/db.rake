@@ -20,7 +20,6 @@ namespace :db do
             its restaurants and cafes, admire its architecture and absorb its atmosphere. Each area has something 
             special to offer.  Here are some of the most interesting neighborhoods to visit.",
             category: travel,
-            date_of_creation: "2020-02-17",
             image: "https://res.cloudinary.com/agusgcloud/image/upload/v1626788943/warm%20up/buenosaires_o5jqta.jpg"
         )
         bariloche = Post.create(
@@ -30,7 +29,6 @@ namespace :db do
             te dejan sin aliento. Bariloche fue mucho más de lo esperado en todos los sentidos. Un destino que, bajo 
             ninguna circunstancia, puede faltar dentro de una ruta por La Patagonia argentina.",
             category: travel,
-            date_of_creation: "2021-07-19",
             image: "https://res.cloudinary.com/agusgcloud/image/upload/v1626789428/warm%20up/bariloche_pqvjaa.jpg"
         )
         colonia = Post.create(
@@ -41,7 +39,6 @@ namespace :db do
             Faro de Colonia de Sacramento, Bastión de San Miguel, Calle de los suspiros, basílica del Santísimo 
             Sacramento, tiendas de artesanía, autos antiguos",
             category: travel,
-            date_of_creation: "2020-08-30",
             image: "https://res.cloudinary.com/agusgcloud/image/upload/v1626790048/warm%20up/colonia_frcd1g.jpg"
         )
         bohio = Post.create(
@@ -51,7 +48,6 @@ namespace :db do
             es la excusa perfecta para realizar un visita a esta antigua ciudad manchega y por supuesto, pasar un 
             momento sublime en el Restaurante de Pepe Rodríguez.",
             category: food,
-            date_of_creation: "2021-05-16",
             image: "https://res.cloudinary.com/agusgcloud/image/upload/v1626790971/warm%20up/bohio_ds24bu.jpg"
         )
         dionisos = Post.create(
@@ -61,7 +57,6 @@ namespace :db do
             su esencia y base suele utilizar elementos y/o productos mediterráneos. Además, lo que nos sorprendió fue 
             disfrutar de esta experiencia y del auténtico sabor de la gastronomía griega en la capital barcelonesa.",
             category: food,
-            date_of_creation: "2020-12-09",
             image: "https://res.cloudinary.com/agusgcloud/image/upload/v1626791474/warm%20up/dioniso_edvc2t.jpg"
         )
         rouser = Post.create(
@@ -70,7 +65,6 @@ namespace :db do
             trasero, dejarla aún más deportiva, dejando a la vista casi todo el neumático trasero, que en combinación 
             con el colín alto y el porta patentes en aluminio trabajado, le dan ese aspecto bien racing.",
             category: bikes,
-            date_of_creation: "2019-02-25",
             image: "https://res.cloudinary.com/agusgcloud/image/upload/v1626792258/warm%20up/rousy_utwi7t.jpg"
         )
         yamahar6 = Post.create(
@@ -81,7 +75,6 @@ namespace :db do
             constraints. Despite this restrained nature, the R6 remains - after 20 years of production - in a class of 
             one, being the only supersport currently updated for Euro4 regulations.",
             category: bikes,
-            date_of_creation: "2021-01-07",
             image: "https://res.cloudinary.com/agusgcloud/image/upload/v1626792737/warm%20up/yamaha-yzf-r6-2017-1_o7elav.jpg"
         )
         metropolis = Post.create(
@@ -92,7 +85,6 @@ namespace :db do
             han convertido, junto a El gabinete del doctor Caligari (Robert Wiene, 1919) y Nosferatu (Murnau, 1922), en 
             obra cumbre del llamado expresionismo alemán.",
             category: movies,
-            date_of_creation: "2009-12-15",
             image: "https://res.cloudinary.com/agusgcloud/image/upload/v1626793523/warm%20up/metropolis-alemania_yv790p.jpg"
         )
         tiempos_modernos = Post.create(
@@ -103,7 +95,6 @@ namespace :db do
             y su libertad como creador (obtenida gracias a su inmensa fama y rentabilidad) para realizar un alegato 
             contra la pobreza y el orden injusto que impone un capitalismo feroz.",
             category: movies,
-            date_of_creation: "2005-11-25",
             image: "https://res.cloudinary.com/agusgcloud/image/upload/v1626794023/warm%20up/tiempos-modernos-1-scaled-1_uxq8vl.jpg"
         )
     end

@@ -5,7 +5,6 @@ class CreatePosts < ActiveRecord::Migration[6.1]
       t.string :title
       t.text :contents
       t.string :image
-      t.date :date_of_creation
 
       t.timestamps
     end

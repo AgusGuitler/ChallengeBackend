@@ -51,7 +51,6 @@ ActiveRecord::Schema.define(version: 2021_07_20_202918) do
     t.string "title"
     t.text "contents"
     t.string "image"
-    t.date "date_of_creation"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["category_id"], name: "index_posts_on_category_id"
@@ -69,8 +68,6 @@ ActiveRecord::Schema.define(version: 2021_07_20_202918) do
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
     t.string "unconfirmed_email"
-    t.string "name"
-    t.string "nickname"
     t.string "image"
     t.string "email"
     t.text "tokens"

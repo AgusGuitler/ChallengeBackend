@@ -1,6 +1,8 @@
-class Category < ApplicationRecord
-    has_many :posts
+# frozen_string_literal: true
 
-    validates :name,
-              presence: true
+class Category < ApplicationRecord
+  has_many :posts
+
+  validates :name,
+            presence: true
 end
