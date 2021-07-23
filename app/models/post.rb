@@ -11,7 +11,7 @@ class Post < ApplicationRecord
             :image,
             presence: true
 
-  validates :image_url, format: { with: /\.(png|jpg)\Z/i }
+  validates :image, format: { with: /\.(png|jpg)\Z/i }
 
   def user
     User.unscoped { super }

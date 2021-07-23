@@ -3,7 +3,7 @@
 FactoryBot.define do
   factory :post do
     title { "MyString" }
-    content { "MyString" }
+    contents { "MyString" }
     image { "MyString.jpg" }
     category
     user
