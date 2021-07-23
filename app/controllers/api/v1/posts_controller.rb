@@ -26,7 +26,6 @@ module Api
 
       def create
         create_post = current_user.posts.new(creation_post_params)
-        byebug
         create_post.category = associated_category
         
         if create_post.save

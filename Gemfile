@@ -5,7 +5,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.0.1"
 
+# Soft delete
+gem 'paranoia', '~> 2.4', '>= 2.4.3'
 gem "active_model_serializers", "~> 0.10.12"
+# User authentication
 gem "devise_token_auth"
 gem "activerecord", "~> 6.1", ">= 6.1.4"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
