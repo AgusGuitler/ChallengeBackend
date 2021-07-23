@@ -4,6 +4,11 @@ require "active_support/core_ext/integer/time"
 # test suite. You never need to work with it otherwise. Remember that
 # your test database is "scratch space" for the test suite and is wiped
 # and recreated between test runs. Don't rely on the data there!
+# Set host for Rails routes helper
+
+Rails.application.routes.default_url_options = {
+  host: ENV["API_HOST"]
+}
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.

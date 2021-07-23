@@ -6,7 +6,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.0.1"
 
 # Soft delete
-gem 'paranoia', '~> 2.4', '>= 2.4.3'
+gem "paranoia", "~> 2.4", ">= 2.4.3"
 gem "active_model_serializers", "~> 0.10.12"
 # User authentication
 gem "devise_token_auth"
@@ -39,7 +39,6 @@ group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
   gem "rubocop-rails", require: false
   gem "rubocop-rails_config"
-
 end
 
 group :development do
