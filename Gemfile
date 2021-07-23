@@ -5,8 +5,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.0.1"
 
-gem "rubocop-rails", require: false
-gem "rubocop-rails_config"
 gem "active_model_serializers", "~> 0.10.12"
 gem "devise_token_auth"
 gem "activerecord", "~> 6.1", ">= 6.1.4"
@@ -36,6 +34,9 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem "rspec-rails", "~> 5.0.0"
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
+  gem "rubocop-rails", require: false
+  gem "rubocop-rails_config"
+
 end
 
 group :development do

@@ -2,7 +2,8 @@
 
 module Api
   module V1
-    class PostsController < ApplicationController
+    class PostsController < ApiController
+
       def index
         render json: posts, each_serializer: PostSerializer, status: :ok
       end
@@ -24,9 +25,10 @@ module Api
       end
 
       def create
-        create_post = Post.new(creation_post_params)
-
+        create_post = current_user.posts.new(creation_post_params)
+        byebug
         create_post.category = associated_category
+        
         if create_post.save
           render json: create_post, serializer: ShowPostSerializer::PostSerializer, status: :created
         else
@@ -63,7 +65,7 @@ module Api
           end
 
           def post
-            @post ||= Post.find(params[:id])
+            @post ||= current_user.posts.find(params[:id])
           end
 
           def update_post_params
