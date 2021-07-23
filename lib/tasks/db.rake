@@ -1,6 +1,11 @@
 namespace :db do
     desc "Populate local/staging data for testing purpose"
       task populate: :environment do
+        fakeuser = User.create(
+            email: "agus@gmail.com",
+            password: "password"
+        )
+        
         travel = Category.create(
             name: "Travel"
         )
@@ -15,6 +20,7 @@ namespace :db do
         )
         
         buenos_aires = Post.create(
+            user: fakeuser,
             title: "My days on Buenos Aires",
             contents: "Three days in Buenos Aires are best enjoyed on foot. Pick a neighborhood and walk it; savor 
             its restaurants and cafes, admire its architecture and absorb its atmosphere. Each area has something 
@@ -23,6 +29,7 @@ namespace :db do
             image: "https://res.cloudinary.com/agusgcloud/image/upload/v1626788943/warm%20up/buenosaires_o5jqta.jpg"
         )
         bariloche = Post.create(
+            user: fakeuser,
             title: "Vacaciones en Bariloche",
             contents: "A veces, las expectativas quedan ampliamente superadas por la realidad. Bendita realidad llena 
             de lagos y montañas nevadas hasta donde alcanza la vista, increíbles carreteras panorámicas y miradores que 
@@ -32,6 +39,7 @@ namespace :db do
             image: "https://res.cloudinary.com/agusgcloud/image/upload/v1626789428/warm%20up/bariloche_pqvjaa.jpg"
         )
         colonia = Post.create(
+            user: fakeuser,
             title: "Fin de semana en Colonia!",
             contents: "Colonia del Sacramento, más conocida simplemente como Colonia, es una bonita ciudad Uruguaya 
             ubicada a los pies del Río de la Plata. A continuación te dejo mi itinerario para visitar Colonia del 
@@ -42,6 +50,7 @@ namespace :db do
             image: "https://res.cloudinary.com/agusgcloud/image/upload/v1626790048/warm%20up/colonia_frcd1g.jpg"
         )
         bohio = Post.create(
+            user: fakeuser,
             title: "Restaurante Bohío",
             contents: "El Restaurante El Bohío consta de una estrella Michelin, y está situado en Illescas, un pueblo 
             de la provincia de Toledo a tan solo 35 kms de esta gran ciudad. El Restaurante El Bohío se fundó en 1934 y 
@@ -51,6 +60,7 @@ namespace :db do
             image: "https://res.cloudinary.com/agusgcloud/image/upload/v1626790971/warm%20up/bohio_ds24bu.jpg"
         )
         dionisos = Post.create(
+            user: fakeuser,
             title: "Comida griega en España",
             contents: "En uno de nuestros viajes a Barcelona estuvimos en un restaurante griego para probar la cocina 
             griega y la verdad nos encanto este tipo de comida. La comida griega es muy diferente a la nuestra, pero en 
@@ -60,6 +70,7 @@ namespace :db do
             image: "https://res.cloudinary.com/agusgcloud/image/upload/v1626791474/warm%20up/dioniso_edvc2t.jpg"
         )
         rouser = Post.create(
+            user: fakeuser,
             title: "Bajaj Rouser ns 200",
             contents: "Estamos frente a una moto Street estilo naked, que permite, mediante la remoción del corta spray 
             trasero, dejarla aún más deportiva, dejando a la vista casi todo el neumático trasero, que en combinación 
@@ -68,6 +79,7 @@ namespace :db do
             image: "https://res.cloudinary.com/agusgcloud/image/upload/v1626792258/warm%20up/rousy_utwi7t.jpg"
         )
         yamahar6 = Post.create(
+            user: fakeuser,
             title: "Yamaha R6",
             contents: "The breath-taking chassis outshines a rather breathless motor, but there are many positives. 
             The updated looks stunning while the front end and brakes help make this a truly brilliant-handling 
@@ -78,6 +90,7 @@ namespace :db do
             image: "https://res.cloudinary.com/agusgcloud/image/upload/v1626792737/warm%20up/yamaha-yzf-r6-2017-1_o7elav.jpg"
         )
         metropolis = Post.create(
+            user: fakeuser,
             title: "Metrópolis",
             contents: "Cualquier intento por hablar de Metrópolis (Fritz Lang, 1927), saca a la luz el debate sobre las 
             clasificaciones estilísticas, las etiquetas, la relatividad conceptual, el encorsetamiento rígido, inútil y 
@@ -88,6 +101,7 @@ namespace :db do
             image: "https://res.cloudinary.com/agusgcloud/image/upload/v1626793523/warm%20up/metropolis-alemania_yv790p.jpg"
         )
         tiempos_modernos = Post.create(
+            user: fakeuser,
             title: "Tiempos modernos",
             contents: "El cine sonoro estaba ya plenamente integrado y Charlot se iba despidiendo (en esta película el 
             personaje incluso canta y hay variados efectos de sonido).

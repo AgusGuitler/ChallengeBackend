@@ -9,5 +9,3 @@ AllCops:
     - "bin/**/*"
     - "lib/tasks/**/*"
     - "vendor/**/*"
-
-    
